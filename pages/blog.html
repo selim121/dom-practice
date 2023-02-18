@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!----- css style ----->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!----- BS style ----->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+
+<body class="px-10">
+    <header class="text-center my-5">
+        <h1><span class="text-info">Wel</span>come <span class="text-info">My</span> Blog</h1>
+    </header>
+    <main>
+         <h3>Q1. What is DOM and what is the purpose of DOM?</h3>
+        <p class="answer">
+            Solution: DOM stands for Document Object Model. It is a programming interface for webpages. It is represents
+            every point for every page. DOM can change the document structure, style, and content. DOM is provide a way
+            for programmers to access and manipulate every content, structure. <br>
+            For example, using the DOM, we can dynamically create, add, or remove elements from web pag based on user
+            input of other events. we can also change the style or content of existing elements, or respond to user
+            interactions such as clicks or keystrokes.
+        </p>
+        <h3>Q2. How will you select HTML elements using DOM? Name the DOM methods.</h3>
+        <p class="answer">
+            We can select HTML elements using DOM by using various methods provided by the DOM. Some of the common DOM
+            methods are given below:
+            <br>-> 'document.getElementById()'
+            <br>-> 'document.getElementByClassName()'
+            <br>-> 'document.getElementsByTagName()'
+            <br>-> 'document.querySelector()'
+            <br>-> 'document.querySelectorAll()'
+
+        </p>
+        <h3>Q3. What is event bubble?</h3>
+        <p class="answer">
+            Event bubbling is the mechanism of Document Object Model (DOM) where events propagate from the child element
+            to its parent. When an event is triggered on an element, it first triggers on that element and then bubbles
+            up to its parent, grandparent and so on until it reaches the document object.
+        </p>
+        <h3>Q4. What is a callback function and why will you use it?</h3>
+        <p class="answer">
+            A callback function is a function that is passed as an argument to another function and is executed when the
+            other function has completed its work. Callbacks are commonly used in JavaScript for event handling, AJAX
+            requests, and other asynchronous operations. They allow the code to be executed in a non-blocking manner,
+            which can result in faster and more responsive applications.
+        </p>
+    </main>
+
+    <!-- js style -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

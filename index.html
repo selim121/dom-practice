@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <!----- css style ----->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <!----- BS style ----->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <!----- font awesome ----->
+    <script src="https://kit.fontawesome.com/f220a353a5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!----- body ----->
+
+<body class="m-5">
+
+    <!----- header ----->
+    <header class="gg-header">
+        <div class="d-flex align-items-center justify-content-between p-4">
+            <div>
+                <h2>Interactive</h2>
+                <h4 class="gg-color-muted fw-normal">Geometry Genius</h4>
+            </div>
+            <div>
+                <button id="btn-blog" class="btn gg-btn px-4 py-1">Blog</button>
+            </div>
+        </div>
+    </header>
+
+    <!----- main ----->
+    <main class="mt-5">
+        <div class="row g-4">
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <!----- triangle calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4" data-color="">
+                            <img class="w-100 h-100 mb-4" src="images/triangle.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="triangle">Triangle</h5>
+                                <p class="gg-color-muted">Area (A) = <span id="triangle-fraction">0.5</span> x b x h</p>
+                                <div>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="triangle-base" placeholder="b">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="triangle-height" placeholder="h">
+                                    <span>cm</span>
+                                </div>
+
+                            </div>
+                            <button id="btn-triangle" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                    <!----- rectangle calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4">
+                            <img class="w-100 h-100 mb-4" src="images/rectangle.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="rectangle">Rectangle</h5>
+                                <p class="gg-color-muted">Area (A) = w x l</p>
+                                <div>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="rectangle-width" placeholder="w">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="rectangle-length" placeholder="l">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button id="btn-rectangle" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                    <!----- parallelogram calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4">
+                            <img class="w-100 h-100 mb-4" src="images/parallelogram.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="parallelogram">Parallelogram</h5>
+                                <p class="gg-color-muted">Area (A) = b x h</p>
+                                <p class="gg-color-muted">b = <span id="parallelogram-text-base">0</span>cm, h = <span id="parallelogram-text-height">0</span>cm <i id="parallelogram-edit"class="fa-regular fa-pen-to-square ms-2 text-dark"></i></p>
+                                <div id="parallelogram-input-field" class="gg-input-display">
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="parallelogram-base" placeholder="b">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name=""
+                                        id="parallelogram-height" placeholder="h">
+                                    <span>cm</span>
+                                    <input class="gg-checkbox" type="checkbox" name="" id="parallelogram-checkbox">
+                                </div>
+                            </div>
+                            <button id="btn-parallelogram" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mt-2">
+                    <!----- rhombus calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4">
+                            <img class="w-100 h-100 mb-4" src="images/rhombus.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="rhombus">Rhombus</h5>
+                                <p class="gg-color-muted position-relative">Area (A) = <span id="rhombus-fraction">0.5</span> x d<span class="position-absolute bottom-0 end-n5 fs-7">1</span><span class="ms-2">x</span> d<span class="position-absolute bottom-0 end-n5 fs-7">2</span></p>
+
+                                <p class="gg-color-mute position-relative">d<span class="position-absolute bottom-0 end-n5 fs-7">1</span><span></span><span class="ms-2">= </span><span id="rhombus-text-base">0</span>cm, d<span class="position-absolute bottom-0 end-n5 fs-7">2</span><span></span><span class="ms-2">= </span><span id="rhombus-text-height">0</span>cm <i id="rhombus-edit"
+                                        class="fa-regular fa-pen-to-square ms-2 text-dark"></i></p>
+                                <div id="rhombus-input-field" class="gg-input-display">
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="rhombus-base" placeholder="d1">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="rhombus-height" placeholder="d2">
+                                    <span>cm</span>
+                                    <input class="gg-checkbox" type="checkbox" name="" id="rhombus-checkbox">
+                                </div>
+                            </div>
+                            <button id="btn-rhombus" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                    <!----- pentagon calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4">
+                            <img class="w-100 h-100 mb-4" src="images/pentagon.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="pentagon">Pentagon</h5>
+                                <p class="gg-color-muted">Area (A) = <span id="pentagon-fraction">0.5</span> x p x b</p>
+                                <p class="gg-color-muted">p = <span id="pentagon-text-base">0</span>cm, b = <span id="pentagon-text-height">0</span>cm <i id="pentagon-edit"
+                                        class="fa-regular fa-pen-to-square ms-2 text-dark"></i></p>
+                                <div  id="pentagon-input-field" class="gg-input-display">
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="pentagon-base" placeholder="p">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="pentagon-height" placeholder="b">
+                                    <span>cm</span>
+                                    <input class="gg-checkbox" type="checkbox" name="" id="pentagon-checkbox">
+                                </div>
+                            </div>
+                            <button id="btn-pentagon" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                    <!----- ellipse calculation ----->
+                    <div class="col">
+                        <div class="card h-100 p-4">
+                            <img class="w-100 h-100 mb-4" src="images/ellipse.png" />
+                            <div class="card-body p-0 text-center">
+                                <h5 id="ellipse">Ellipse</h5>
+                                <p class="gg-color-muted">Area (A) = πab<span id="ellipse-fraction" class="opacity-0">3.14</span></p>
+                                <p class="gg-color-muted">a = <span id="ellipse-text-base">0</span>cm, b = <span id="ellipse-text-height">0</span>cm <i id="ellipse-edit"
+                                        class="fa-regular fa-pen-to-square ms-2 text-dark"></i></p>
+                                <div  id="ellipse-input-field" class="gg-input-display">
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="ellipse-base" placeholder="a">
+                                    <span>cm</span>
+                                    <input class="border-0 gg-input-field py-1 w-30" type="number" name="" id="ellipse-height" placeholder="b">
+                                    <span>cm</span>
+                                    <input class="gg-checkbox" type="checkbox" name="" id="ellipse-checkbox">
+                                </div>
+                            </div>
+                            <button id="btn-ellipse" class="btn gg-btn w-100 py-1 my-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 border">
+                <h4 class="text-center text-decoration-underline fw-bold mt-5 mb-3">Area Calculation</h4>
+                <table class="table">
+                    <tbody id="table-area">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- js style -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

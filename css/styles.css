@@ -1,0 +1,82 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Lobster&family=Manrope&family=Open+Sans&family=Poppins&family=Rubik&family=Work+Sans&display=swap');
+
+/* 
+font-family: 'EB Garamond', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+/* common styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.gg-btn{
+    background-color: #1090D8 !important;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+}
+
+.gg-convert-btn{
+    background-color: #1090D8 !important;
+    color: #FFFFFF !important;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 9px;
+}
+
+.gg-checkbox{
+    accent-color: #1090D8;
+    width: 25px;
+    height: 25px;
+}
+
+.gg-color-muted{
+    color: rgb(17, 17, 17, 0.6) !important;
+}
+
+.gg-input-field{
+    background-color: #F1F1F1 !important;
+    border-radius: 4px;
+}
+
+.gg-card-bg{
+    color: #FFFFFF;
+}
+
+.gg-box{
+    position: relative;
+    width: 15px;
+    height: 25px;
+}
+.gg-word-upper-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gg-number-lower-right{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.gg-header {
+    background: rgba(16, 144, 216, 0.1);
+    border-radius: 8px;
+}
+
+.gg-input-display{
+    display: none;
+}
+
+.answer{
+    text-align: justify;
+}
